@@ -1,6 +1,6 @@
 ﻿string outputString = "Hello World";
 Console.WriteLine(outputString);
-double decimValue = 0.3;
+float decimValue = 0.3f;
 Console.WriteLine(decimValue);
 bool isAwesome = true;
 Console.WriteLine(isAwesome);
