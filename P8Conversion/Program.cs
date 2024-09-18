@@ -8,10 +8,14 @@
     Convert the original string to type int.
     What happens? (Hint: You will see an Invalid Format Exception
  */
+
+using System.Globalization;
+
 Console.WriteLine("Give me a number");
 string? number = Console.ReadLine();
 float numberFloat = float.Parse(number);
 Console.WriteLine(numberFloat);
 int numberWhole = (int) numberFloat;
 Console.WriteLine(numberWhole);
-int numberIntWhole = int.Parse(number);
+int numberIntWhole = int.Parse(number, CultureInfo.InvariantCulture);
+Console.WriteLine(numberIntWhole);
