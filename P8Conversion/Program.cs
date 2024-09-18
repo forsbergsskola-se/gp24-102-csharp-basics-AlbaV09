@@ -9,13 +9,13 @@
     What happens? (Hint: You will see an Invalid Format Exception
  */
 
-using System.Globalization;
-
+//using System.Globalization;
+//Thread.CurrentThread.CurrentCulture = CultureInfo.InvariantCulture;
 Console.WriteLine("Give me a number");
 string? number = Console.ReadLine();
 float numberFloat = float.Parse(number);
 Console.WriteLine(numberFloat);
 int numberWhole = (int) numberFloat;
 Console.WriteLine(numberWhole);
-int numberIntWhole = int.Parse(number, CultureInfo.InvariantCulture);
+int numberIntWhole = Convert.ToInt32(number);
 Console.WriteLine(numberIntWhole);
