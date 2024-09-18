@@ -1,0 +1,17 @@
+﻿Console.WriteLine("Give me a number of seconds");
+string? seconds = Console.ReadLine();
+int secondsNumber = int.Parse(seconds);
+int days = secondsNumber / 86400;
+int remainSec = secondsNumber % 86400;
+int hours = remainSec / 3600;
+int remainSecond = remainSec % 3600;
+int minutes = remainSecond / 60;
+int lastSeconds = remainSecond % 60;
+Console.WriteLine($"Seconds: {lastSeconds}");
+Console.WriteLine($"Minutes: {minutes}");
+Console.WriteLine($"Hours: {hours}");
+Console.WriteLine($"Days: {days}");
+Console.WriteLine($"{days}.{hours}:{minutes}:{lastSeconds}");
+float secondsFloat = float.Parse(seconds);
+double fraction = secondsFloat / 86400;
+Console.WriteLine($"In total, that's {fraction} days");
