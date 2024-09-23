@@ -14,12 +14,29 @@ string? third = Console.ReadLine();
 int firstNumber = Convert.ToInt32(first);
 int secondNumber = Convert.ToInt32(second);
 int thirdNumber = Convert.ToInt32(third);
-if (secondNumber > firstNumber && secondNumber > thirdNumber)
+if (firstNumber < secondNumber && firstNumber < thirdNumber)
+{
+    Console.WriteLine(firstNumber);
+    
+} if (secondNumber < firstNumber && secondNumber < thirdNumber)
 {
     Console.WriteLine(secondNumber);
-} else if (secondNumber < firstNumber && secondNumber < thirdNumber)
+    
+} if (thirdNumber < firstNumber && thirdNumber < secondNumber)
+{
+    Console.WriteLine(thirdNumber);
+    
+} if (firstNumber > secondNumber && firstNumber > thirdNumber)
+{
+    Console.WriteLine(firstNumber);
+    
+} if (secondNumber > firstNumber && secondNumber > thirdNumber)
 {
     Console.WriteLine(secondNumber);
+    
+} if (thirdNumber > firstNumber && thirdNumber > secondNumber)
+{
+    Console.WriteLine(thirdNumber);
 }
 
 
